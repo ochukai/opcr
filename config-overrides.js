@@ -7,6 +7,9 @@ const {
   fixBabelImports,
 } = require("customize-cra");
 
+// 关闭 sourcemap
+process.env.GENERATE_SOURCEMAP = "false";
+
 const addWebpLoader = (loaderOptions = {}, customCssModules = {}) => config => {
   // const { module } = config;
   // const oneOf = module.rules[1].oneOf;

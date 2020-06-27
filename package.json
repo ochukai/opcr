@@ -2,6 +2,7 @@
   "name": "opcr",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://ochukai.me/opcr/",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
