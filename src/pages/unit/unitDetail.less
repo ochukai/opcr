@@ -1,0 +1,71 @@
+.opcr-unit-detail {
+  .meta {
+    display: flex;
+
+    .unit-wrapper {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    h2,
+    p {
+      margin: 0;
+    }
+  }
+
+  .outer-rank-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .rank-wrapper {
+      margin: 0 10px 20px;
+    }
+  }
+
+  .ant-card {
+    width: 350px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.rank-wrapper {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  position: relative;
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  .rank {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 23px);
+    font-weight: bold;
+  }
+
+  .rank-item {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+
+    &.eq1,
+    &.eq2,
+    &.eq5,
+    &.eq6 {
+      text-align: center;
+    }
+
+    &.eq3 {
+      text-align: left;
+    }
+
+    &.eq4 {
+      text-align: right;
+    }
+  }
+}
