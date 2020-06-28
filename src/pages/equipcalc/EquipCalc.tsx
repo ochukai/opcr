@@ -267,7 +267,7 @@ function EquipmentCalc() {
   return (
     <div className="opcr-equipment-calc">
       <Row>
-        <Col flex="0 1 200px">
+        <Col flex="0 1 200px" style={{paddingLeft: 5}}>
           <h2>目标</h2>
           <Form initialValues={{ start, end }} onValuesChange={handleValuesChange}>
             <Space direction="vertical">
