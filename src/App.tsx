@@ -26,8 +26,8 @@ function App() {
   return (
     <Layout className="opcr-app-layout">
       <Header>
-        <Row>
-          <Col span={14} offset={5}>
+        <Row justify="center">
+          <Col xxl={12} xl={18} lg={22} md={24}>
             <Menu mode="horizontal">
               <Menu.Item key="index">
                 <Link to="/"><HomeOutlined /></Link>
@@ -50,8 +50,8 @@ function App() {
       </Header>
 
       <Content className="opcr-main-content">
-        <Row>
-          <Col span={14} offset={5}>
+        <Row justify="center">
+          <Col xxl={12} xl={18} lg={22} md={24}>
             <Switch>
               <Route exact path="/" component={Index} />
               <Route exact path="/units" component={Units} />
