@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Layout, Menu, Row, Col, BackTop } from 'antd';
-import { UserOutlined, HomeOutlined, HeatMapOutlined, ToolOutlined, CalculatorOutlined } from '@ant-design/icons';
+import { UserOutlined, HomeOutlined, HeatMapOutlined, ToolOutlined, CalculatorOutlined, BarsOutlined } from '@ant-design/icons';
 
 import { Switch, Route, Link, withRouter, useLocation } from 'react-router-dom';
 
@@ -14,6 +14,7 @@ import Units from './pages/unit/Units';
 import UnitDetail from './pages/unit/UnitDetail';
 import Equipments from './pages/equip/Equipments';
 import Quests from './pages/quest/Quests';
+import Timeline from './pages/timeline/Timeline';
 
 import EquipCalc from './pages/equipcalc/EquipCalc';
 
@@ -44,6 +45,9 @@ function App() {
               <Menu.Item key="ec">
                 <Link to="/equipcalc"><CalculatorOutlined /> 计算器</Link>
               </Menu.Item>
+              {/* <Menu.Item key="line">
+                <Link to="/line"><BarsOutlined /> 轴</Link>
+              </Menu.Item> */}
             </Menu>
           </Col>
         </Row>
@@ -59,6 +63,7 @@ function App() {
               <Route exact path="/equipcalc" component={EquipCalc} />
               <Route exact path="/equipments" component={Equipments} />
               <Route exact path="/quests" component={Quests} />
+              <Route exact path="/line" component={Timeline} />
               <Route component={NotFound} />
             </Switch>
           </Col>

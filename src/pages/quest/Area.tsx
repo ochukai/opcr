@@ -87,7 +87,6 @@ function Area(props: any) {
 
   return (
     <div className="opcr-area-wrapper">
-      <h3>{title}</h3>
       <List
         grid={{ gutter: 16, column: 5 }}
         dataSource={normalMaps}

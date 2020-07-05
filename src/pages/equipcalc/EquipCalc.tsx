@@ -5,13 +5,13 @@ import { Row, Col, Divider, Select, Button, Drawer, Space, Form, Table } from 'a
 import Unit from '../../components/unit/Unit';
 import Equipment from '../../components/equip/Equipment';
 
-import equipments from '../../assets/json/equipment.json';
 import ranks from '../../assets/json/rank.json';
 import units from '../../assets/json/unit.json';
 import './equipCalc.less';
 
 const { Option } = Select;
 const rankStages = [
+  '6-6',
   '7-3',
   '7-5',
   '7-6',
@@ -93,7 +93,7 @@ function renderDrawer(visible: boolean, onClose: any) {
 
   return (
     <Drawer
-      title="需要装备数量"
+      title={`需要装备数量`}
       width={625}
       placement="right"
       onClose={onClose}
@@ -241,8 +241,7 @@ function EquipmentCalc() {
     });
 
     const allEquipsCount = _.countBy(allEquips);
-    const equips: IEquipCount[] = Object
-      .keys(allEquipsCount)
+    const equips: IEquipCount[] = Object.keys(allEquipsCount)
       .map((key) => ({id: parseInt(key), count: allEquipsCount[key]}));
 
     globalEquips.units = units;
@@ -262,6 +261,21 @@ function EquipmentCalc() {
 
   const handleClear = () => {
     setSelectedUnits([]);
+  };
+
+  const handleUnitClick = (item: any) => {
+    const old = selectedUnits.filter(su => su.id === item.id);
+    if (!old.length) {
+      const val = {
+        id: item.id,
+        start,
+        end
+      };
+
+      setSelectedUnits(selectedUnits.concat([ val ]));
+    } else {
+      setSelectedUnits(selectedUnits.filter(su => su.id !== item.id))
+    }
   };
 
   return (
@@ -310,20 +324,7 @@ function EquipmentCalc() {
                   checkable={true}
                   checked={checked}
                   id={unit.id}
-                  onClick={(item: any) => {
-                    const old = selectedUnits.filter(su => su.id === item.id);
-                    if (!old.length) {
-                      const val = {
-                        id: item.id,
-                        start,
-                        end
-                      };
-
-                      setSelectedUnits(selectedUnits.concat([ val ]));
-                    } else {
-                      setSelectedUnits(selectedUnits.filter(su => su.id !== item.id))
-                    }
-                  }}
+                  onClick={handleUnitClick}
                 />
               );
             })
