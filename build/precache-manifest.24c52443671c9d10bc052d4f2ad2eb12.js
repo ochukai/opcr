@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eba2ca11099495a9c3ddff254de8d279",
+    "revision": "58c10fa20ed2fed19a9377bba08f9939",
     "url": "/opcr/index.html"
   },
   {
-    "revision": "491f33e2ef072a1a77c5",
-    "url": "/opcr/static/css/2.157a102b.chunk.css"
+    "revision": "af0444441df812448053",
+    "url": "/opcr/static/css/2.b162dfcd.chunk.css"
   },
   {
-    "revision": "4801b530854e1c26f584",
-    "url": "/opcr/static/css/main.597a36f5.chunk.css"
+    "revision": "36856bd7e046ca66a821",
+    "url": "/opcr/static/css/main.aebccc5a.chunk.css"
   },
   {
-    "revision": "491f33e2ef072a1a77c5",
-    "url": "/opcr/static/js/2.dca02e03.chunk.js"
+    "revision": "af0444441df812448053",
+    "url": "/opcr/static/js/2.c4480d79.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/opcr/static/js/2.dca02e03.chunk.js.LICENSE.txt"
+    "url": "/opcr/static/js/2.c4480d79.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4801b530854e1c26f584",
-    "url": "/opcr/static/js/main.a2cc34a8.chunk.js"
+    "revision": "36856bd7e046ca66a821",
+    "url": "/opcr/static/js/main.e6fdc64c.chunk.js"
   },
   {
     "revision": "846918648485d1722f16",
