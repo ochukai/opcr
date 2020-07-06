@@ -252,4 +252,5 @@ const images = {
   "180511": require('../assets/images/unit/180511.webp'),
   "180531": require('../assets/images/unit/180531.webp')
 };
+
 export default images as { [key: string]: any };

@@ -33,7 +33,7 @@ function Quest(props: any) {
     >
       {map.id1 && <Equipment size={48} id={map.id1} />}
       {map.id2 && <Equipment size={48} id={map.id2} />}
-      {map.id3 && <Item size={48} id={map.id3} />}
+      {map.id3 ? <Item size={48} id={map.id3} /> : ''}
     </Card>
   );
 }

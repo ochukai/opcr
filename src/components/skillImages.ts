@@ -55,4 +55,5 @@ const images = {
   "3010": require('../assets/images/skill/3010.webp'),
   "3011": require('../assets/images/skill/3011.webp')
 };
+
 export default images as { [key: string]: any };
