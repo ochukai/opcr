@@ -23,12 +23,19 @@ import './App.less';
 function App() {
   const location = useLocation();
   console.log('app - use location', location);
+  const resp = {
+    xxl: 12,
+    xl: 16,
+    lg: 20,
+    md: 24,
+    sm: 24,
+  };
 
   return (
     <Layout className="opcr-app-layout">
       <Header>
         <Row justify="center">
-          <Col xxl={12} xl={18} lg={22} md={24}>
+          <Col {...resp}>
             <Menu mode="horizontal">
               <Menu.Item key="index">
                 <Link to="/"><HomeOutlined /></Link>
@@ -55,7 +62,7 @@ function App() {
 
       <Content className="opcr-main-content">
         <Row justify="center">
-          <Col xxl={12} xl={18} lg={22} md={24}>
+          <Col {...resp}>
             <Switch>
               <Route exact path="/" component={Index} />
               <Route exact path="/units" component={Units} />

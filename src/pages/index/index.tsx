@@ -2,7 +2,9 @@ import React from 'react';
 
 function Index() {
   return (
-    <h1>This is Index !!! nothing</h1>
+    <div style={{ textAlign: 'center', padding: 20 }}>
+      <img style={{ maxWidth: '100%' }} src={require('../../assets/images/index-1.jpg')} />
+    </div>
   );
 }
 
