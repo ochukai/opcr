@@ -47,7 +47,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2",
-    "uuid": "^8.2.0"
+    "uuid": "^8.2.0",
+    "webp-converter": "^2.2.8"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.10.3",

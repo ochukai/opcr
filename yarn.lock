@@ -11324,6 +11324,11 @@ webidl-conversions@^4.0.2:
   resolved "https://registry.npm.taobao.org/webidl-conversions/download/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
   integrity sha1-qFWYCx8LazWbodXZ+zmulB+qY60=
 
+webp-converter@^2.2.8:
+  version "2.2.8"
+  resolved "https://registry.npm.taobao.org/webp-converter/download/webp-converter-2.2.8.tgz#efb804d7407a5ffc629e291dc6d172ce95c1cc30"
+  integrity sha1-77gE10B6X/xinikdxtFyzpXBzDA=
+
 webpack-dev-middleware@^3.7.2:
   version "3.7.2"
   resolved "https://registry.npm.taobao.org/webpack-dev-middleware/download/webpack-dev-middleware-3.7.2.tgz#0019c3db716e3fa5cecbf64f2ab88a74bab331f3"
