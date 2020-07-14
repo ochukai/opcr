@@ -98,7 +98,7 @@ function Area(props: any) {
       />
       <Divider />
       <List
-        grid={{ gutter: 16, column: 4 }}
+        grid={{ gutter: 16, column: 3 }}
         dataSource={hardMaps}
         renderItem={item => (
           <List.Item>

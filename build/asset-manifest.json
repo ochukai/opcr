@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/opcr/static/css/main.48d2dc81.chunk.css",
-    "main.js": "/opcr/static/js/main.a9841425.chunk.js",
+    "main.css": "/opcr/static/css/main.03f6d085.chunk.css",
+    "main.js": "/opcr/static/js/main.0676fdcd.chunk.js",
     "runtime-main.js": "/opcr/static/js/runtime-main.0f9d474a.js",
     "static/css/2.416a1d06.chunk.css": "/opcr/static/css/2.416a1d06.chunk.css",
     "static/js/2.b0886921.chunk.js": "/opcr/static/js/2.b0886921.chunk.js",
     "index.html": "/opcr/index.html",
-    "precache-manifest.f34ff65a1493fca18063587bced0c637.js": "/opcr/precache-manifest.f34ff65a1493fca18063587bced0c637.js",
+    "precache-manifest.8254d5fae9ce097808a2be7d7619f609.js": "/opcr/precache-manifest.8254d5fae9ce097808a2be7d7619f609.js",
     "service-worker.js": "/opcr/service-worker.js",
     "static/js/2.b0886921.chunk.js.LICENSE.txt": "/opcr/static/js/2.b0886921.chunk.js.LICENSE.txt",
     "static/media/01001.png": "/opcr/static/media/01001.0d8a1fc5.png",
@@ -1048,7 +1048,7 @@
     "static/js/runtime-main.0f9d474a.js",
     "static/css/2.416a1d06.chunk.css",
     "static/js/2.b0886921.chunk.js",
-    "static/css/main.48d2dc81.chunk.css",
-    "static/js/main.a9841425.chunk.js"
+    "static/css/main.03f6d085.chunk.css",
+    "static/js/main.0676fdcd.chunk.js"
   ]
 }
