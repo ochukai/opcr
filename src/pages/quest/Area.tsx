@@ -1,8 +1,9 @@
 import React from 'react';
+// import html2canvas from 'html2canvas';
 
 import quests from '../../assets/json/quest.json';
 
-import { Divider, List, Table, Tag } from 'antd';
+import { Divider, List, Table, Tag, Button, Modal } from 'antd';
 
 import './quests.less';
 import Quest from './Quest';
@@ -44,14 +45,14 @@ function parseNormalMaps(maps: Array<any>) {
   return equips;
 }
 
-function renderEquipMaps(equips: IEquipMap[]) {
+function renderEquipMaps(equips: IEquipMap[], title: string) {
   const columns = [
     {
       title: '-',
       dataIndex: 'id',
-      width: 80,
+      width: 60,
       key: 'id',
-      render: (id: number) => <Equipment size={48} id={id} />
+      render: (id: number) => <Equipment size={36} id={id} />
     },
     {
       title: '装备',
@@ -74,8 +75,29 @@ function renderEquipMaps(equips: IEquipMap[]) {
     }
   ];
 
-  return <Table size="small" bordered={true} pagination={false} dataSource={equips} columns={columns} />;
+  return (
+    <Table
+      size="small"
+      bordered={true}
+      pagination={false}
+      dataSource={equips}
+      columns={columns}
+      title={() => title}
+    />
+  );
 }
+
+// async function handleExport() {
+//   const $table: any = document.querySelector('.ant-table');
+//   const canvas = await html2canvas($table);
+//   const imgSrc = canvas.toDataURL('image/png');
+//   Modal.success({
+//     title: '图片',
+//     content: (
+//       <img style={{ maxWidth: 300 }} src={imgSrc} />
+//     )
+//   });
+// }
 
 function Area(props: any) {
   const { title } = props;
@@ -83,7 +105,7 @@ function Area(props: any) {
   const normalMaps = maps.filter(map => map.type === 11);
   const hardMaps = maps.filter(map => map.type === 12);
   const equips = parseNormalMaps(normalMaps);
-  const equipMaps = renderEquipMaps(equips);
+  const equipMaps = renderEquipMaps(equips, title);
 
   return (
     <div className="opcr-area-wrapper">
@@ -106,7 +128,10 @@ function Area(props: any) {
           </List.Item>
         )}
       />
-      <Divider>{title} 装备掉落汇总</Divider>
+      <Divider>
+        {/* <Button onClick={handleExport}>导出</Button>  */}
+        装备掉落汇总
+      </Divider>
       {equipMaps}
     </div>
   );
